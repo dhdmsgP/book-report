@@ -1,0 +1,59 @@
+body {
+    font-family: 'Noto Serif KR', serif; /* 부드러운 느낌의 명조체 */
+    margin: 0;
+    background-color: #f9f5f0; /* 따뜻하고 아늑한 배경색 */
+    color: #4a4a4a; /* 차분한 텍스트 색상 */
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 960px;
+    margin: 60px auto; /* 여백 증가 */
+    background-color: #fff;
+    padding: 40px; /* 패딩 증가 */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* 그림자 더 부드럽게 */
+}
+
+.book-section {
+    margin-bottom: 60px; /* 간격 증가 */
+    padding-bottom: 60px; /* 간격 증가 */
+    border-bottom: 1px solid #e8e3d9; /* 은은한 구분선 */
+}
+
+.book-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.book-title {
+    font-size: 2.4em; /* 제목 크기 증가 */
+    color: #37474f;
+    text-align: center;
+    margin-bottom: 25px; /* 여백 증가 */
+    letter-spacing: -0.8px;
+}
+
+.book-image {
+    width: 100%;
+    max-height:400px; /* 최대 높이 증가 */
+    object-fit: cover;
+    border-radius: 10px; /* 모서리 더 둥글게 */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px; /* 여백 증가 */
+    transition: transform 0.3s ease-in-out; /* 호버 효과 추가 */
+}
+
+.book-image:hover {
+    transform: scale(1.02); /* 살짝 확대되는 호버 효과 */
+}
+
+.book-description {
+    color: #5e5e5e; /* 설명 텍스트 색상 변경 */
+    text-align: center;
+    font-size: 1.1em; /* 폰트 크기 약간 증가 */
+    line-height: 1.8; /* 줄 간격 약간 증가 */
+}
